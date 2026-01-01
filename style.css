@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(2, 6, 23, 0.9);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: #cbd5f5;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: #22c55e;
+}
+
+/* Sections */
+.section {
+  padding: 120px 20px 80px;
+  text-align: center;
+}
+
+/* Hero */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.gradient-text {
+  font-size: 3rem;
+  background: linear-gradient(90deg, #6366f1, #22c55e);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.hero p {
+  margin-top: 15px;
+  color: #94a3b8;
+}
+
+.cta-btn {
+  margin: 30px auto 0;
+  padding: 14px 30px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #6366f1, #22c55e);
+  color: white;
+  text-decoration: none;
+  display: block;
+  max-width: 300px;
+}
+
+/* Glass Section */
+.glass {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(15px);
+  max-width: 420px;
+  margin: auto;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.upload-btn {
+  display: inline-block;
+  margin: 15px 0;
+  padding: 12px 20px;
+  background: #6366f1;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+#preview {
+  display: none;
+  max-width: 280px;
+  margin: 15px auto;
+  border-radius: 12px;
+}
+
+#analyzeBtn {
+  padding: 10px 22px;
+  background: #22c55e;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Recipes */
+.recipes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.card {
+  background: rgba(255,255,255,0.06);
+  padding: 25px;
+  border-radius: 18px;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SnapChef AI</title>
+  <link rel="stylesheet" href="style.css" />
+
+<link rel="icon" href="data:,">
+
+
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="logo">🍳 SnapChef AI</div>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#scan">Scan</a></li>
+    <li><a href="#recipes">Recipes</a></li>
+    <li><a href="#about">About</a></li>
+  </ul>
+</nav>
+
+<!-- Home -->
+<section id="home" class="section hero">
+  <h1 class="gradient-text">What Should I Cook Today?</h1>
+  <p>Upload your fridge photo and let AI decide 🍽️</p>
+  <a href="#scan" class="cta-btn">Scan Your Fridge</a>
+</section>
+
+<!-- Scan -->
+<section id="scan" class="section glass">
+  <h2>📸 Scan Your Fridge</h2>
+
+  <input type="file" id="imageInput" accept="image/*" />
+  <label for="imageInput" class="upload-btn">Upload Image</label>
+
+  <img id="preview" />
+
+  <button id="analyzeBtn">Analyze Ingredients</button>
+</section>
+
+<!-- Recipes -->
+<section id="recipes" class="section">
+  <h2>🍽️ Recipe Suggestions</h2>
+
+  <!-- Firebase recipes will load here -->
+  <div class="recipes" id="recipesContainer">
+  </div>
+
+</section>
+
+<!-- About -->
+<section id="about" class="section about">
+  <h2>About SnapChef AI</h2>
+  <p>
+    SnapChef AI uses AI to detect ingredients from fridge images
+    and suggest recipes instantly. Built with Firebase.
+  </p>
+</section>
+
+<!-- 🔥 IMPORTANT CHANGE -->
+<script type="module" src="script.js"></script>
+
+</body>
+</html>
